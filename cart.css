@@ -1,0 +1,177 @@
+/* Reset default browser styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding-bottom: 60px; /* Ensure space for footer */
+}
+
+/* Header styles */
+header {
+    background: rgba(8, 36, 11, 0.833);;
+    color: #fff;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content styles */
+main {
+    padding: 80px 20px 20px; /* Padding to accommodate fixed header */
+}
+
+main .add-to-cart {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2em;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Product grid styles */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Center the grid */
+}
+
+.product, .product1, .wheat {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px; /* Fixed width for uniformity */
+    height: 400px; /* Fixed height for uniformity */
+    box-sizing: border-box;
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product img, .product1 img, .wheat img {
+    width: 100%;
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.product h3, .product1 h3, .wheat h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #d9dfe6;
+}
+
+.product .description, .product1 .description, .wheat .description {
+    font-size: 0.9em;
+    color: #555;
+    flex-grow: 1; /* Allow description to grow and take available space */
+}
+
+.product .price, .product1 .price, .wheat .price {
+    font-size: 1.2em;
+    color: #27ae60;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.add-to-cart {
+    background: #f7eaea;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.add-to-cart:hover {
+    background: #d35400;
+}
+
+/* Footer styles */
+footer {
+    background: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .product-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product, .product1, .wheat {
+        width: 90%; /* Adjust width on smaller screens */
+        height: auto; /* Remove fixed height to accommodate varying content */
+    }
+}
+
+@media (max-width: 480px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

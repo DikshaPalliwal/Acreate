@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color:  #0e3a05ba;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .product-item {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            width: calc(33.333% - 20px);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .product-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .product-info {
+            padding: 15px;
+        }
+        .product-info h3 {
+            margin: 0 0 10px;
+            font-size: 1.2em;
+        }
+        .product-info p {
+            margin: 0 0 10px;
+            color: #555;
+        }
+        .price {
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            margin-top: 10px;
+            background-color: #0e3a05ba;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .btn:hover {
+            background-color: #0353a4;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Plants and Crops Listings</h1>
+    </header>
+    <div class="container">
+        <div class="product-list">
+            <div class="product-item">
+                <img src="rose.webp" alt="Rose">
+                <div class="product-info">
+                    <h3>Rose Plant</h3>
+                    <p>Beautiful and fragrant rose plants, ideal for gardens and home decor.</p>
+                    <div class="price">200/- each</div>
+                    <a href="cart.html" class="btn">Add to Cart</a>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="veg1.jpg" alt="Tomato">
+                <div class="product-info">
+                    <h3>Tomato </h3>
+                    <p>Fresh tomato , perfect for home as well as Restaurants.</p>
+                    <div class="price">80/- per kg</div>
+                    <a href="cart.html" class="btn">Add to Cart</a>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="Cucumber.webp" alt="Cucumber">
+                <div class="product-info">
+                    <h3>Cucumber</h3>
+                    <p>Cucumber, great for salads and healthy meals.</p>
+                    <div class="price">30/-kg</div>
+                    <a href="cart.html" class="btn">Add to Cart</a>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="Jowar.webp" alt="Jowar">
+                <div class="product-info">
+                    <h3>Jowar</h3>
+                    <p>Perfect for your healthy meal</p>
+                    <div class="price">37/-kg</div>
+                    <a href="cart.html" class="btn">Add to Cart</a>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="milk.jpg" alt="Milk">
+                <div class="Consume in 2 days after Delivery">
+                    <h3>Milk</h3>
+                    <p>Best for Your Morning Cup of Tea</p>
+                    <div class="price">54/- per ltr</div>
+                    <a href="cart.html" class="btn">Add to Cart</a>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="carrot.jpg" alt="Carrot">
+                <div class="product-info">
+                    <h3>Carrot</h3>
+                    <p>High-quality carrot </p>
+                    <div class="price">80/- kg</div>
+                    <a href="cart.html" class="btn">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
